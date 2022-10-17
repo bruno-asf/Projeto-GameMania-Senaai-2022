@@ -1,0 +1,753 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Montserrat:wght@300;500;700&display=swap');
+
+
+/*=========================================
+               FONTE UNIVERSAL
+===========================================*/
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*=========================================
+               BOTÃO UNIVERSAL
+===========================================*/
+
+.comprar{
+    text-transform: uppercase;
+    background-color: red;
+    border: 0;
+    margin-top: 30px;
+    padding: 8px 20px;
+    border-radius: 5px;
+}
+
+.comprar a{
+    text-decoration: none;
+    color: white;
+}
+
+.comprar:hover{
+    background-color: tomato;
+}
+
+
+/*=============================================
+             ÁREA HEADER CONTATOS
+==============================================*/
+
+.area-contatos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    background-color: #181717;
+    position: relative;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.header-contact{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contatos-header{
+    display: flex;
+    justify-content: space-between;
+    width: 65%;
+}
+
+.contacts{
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+
+.contacts img{
+    width: 24px;
+}
+
+.contacts a{
+    text-decoration: none;
+}
+
+.contacts p{
+    margin: 0;
+    color: white;
+    padding-left: 10px;
+    font-size: 0.9rem;
+}
+
+.contacts p:hover{
+    color: #ccc;
+}
+
+/*==================================
+        ÁREA HEADER REDES SOCIAIS
+====================================*/
+
+.redes-sociais{
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+}
+
+.redes-sociais a{
+    display: flex;
+
+}
+
+.redes-sociais img{
+    width: 24px;
+    transition: all 1s;
+}
+
+.redes-sociais img:hover{
+    -webkit-transform: rotateZ(360deg);
+    transform: rotateZ(360deg);
+}
+
+.menu-barra{
+    display: flex
+}
+
+.barra-menu{
+    display: none;
+}
+
+.menu-none{
+    display: none;
+}
+
+
+/*=================================
+    ÁREA HEADER LOGIN - SEARCH
+===================================*/
+
+.login-search{
+    display: flex;
+    align-items: center;
+    height: 150px;
+    background-color: #4E9443;
+}
+
+.header-login{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.menu-login{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 65%;
+    height: 100%;
+}
+
+.menu-login .logo{
+    width: 90px;
+}
+
+form{
+    display: flex;
+    width: 70%;
+}
+
+form input{
+    font-size: 1.2rem;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 0;
+    outline: 0px;
+    width: 100%;
+}
+
+form button{
+    background-color: transparent;
+    border: 0;
+}
+
+form img{
+    display: flex;
+    width: 20px;
+    margin-left: -32px;
+}
+/*==================================
+        ÁREA LOGIN - USUÁRIO
+====================================*/
+
+.minha-conta{
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    align-items: center;
+}
+
+.usuario{
+    display: flex;
+    align-items: center;
+}
+
+.usuario a{
+    text-decoration: none;
+}
+
+.usuario p:hover{
+    color: #ccc;
+}
+
+.usuario p{
+    color: white;
+}
+
+.usuario img{
+    width: 30px;
+    margin-right: 10px;
+    margin-left: 50px;
+}
+
+.usuario .sinal{
+    width: 15px;
+    margin-left: 8px;
+}
+
+.itens-carrinho img{
+    width: 30px;
+}
+
+/*===================================
+        ÁREA HEADER OPÇÕES DO MENU
+=====================================*/
+
+.opc-menu{
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+.menu a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 600;
+    color: black;
+}
+
+.menu a:hover{
+    color: #4E9443;
+}
+
+
+/*===================================
+        SESSÃO BANNER PRINCIPAL
+=====================================*/
+
+#banner-principal{
+    background-image: url(../imagens/bannerGamer.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+.card-jogos{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+}
+
+.card-banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 60%;
+    height: 500px;
+}
+
+.card-banner img{
+    width: 90%;
+    margin: 0;
+    padding: 0;
+}
+
+.card-banner p{
+    font-size: 2rem;
+    font-family: 'Cinzel Decorative', cursive;
+    font-weight: 700;
+    text-align: center;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/*=============================
+        SESSÃO DESTAQUES
+===============================*/
+
+.card-flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cards-destaques p{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.cards-destaques hr{
+        border: 0;
+        height: 2px;
+        background-image: linear-gradient(to right, transparent, #4E9443, transparent);  
+}
+
+.cards-destaques .card{
+    background-image: url(../imagens/bannerGamer.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 32%;
+    height: 250px;
+}
+
+.quadro-branco{
+    width: 50%;
+    height: 85%;
+    background-color: white;
+}
+
+.card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.flex-and{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.card img{
+    position: absolute;
+    width: 13%;
+}
+
+.flex-column{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    align-content: center;
+}
+
+.card-info{
+    max-width: 150px;
+    background-color: #ccc;
+}
+
+.card-info p{
+    margin: 0;
+    font-size: 0.8rem;
+    color: white;
+}
+
+.info-produtos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.info-produtos p{
+    max-width: 190px;
+    font-size: 0.8rem;
+    color: white;
+    margin: 0;
+}
+
+.info-produtos .preco{
+    color: red;
+    font-size: 1.3rem;
+}
+
+
+/*=============================
+        SESSÃO PRODUTOS
+===============================*/
+
+
+.produtos{
+    margin-bottom: 150px;
+}
+.cards-produtos p{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.cards-produtos hr{
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, transparent, #4E9443, transparent);  
+}
+
+.card-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 27%;
+    height: 350px;
+    border: 1px solid #ccc
+}
+
+.card-2 img{
+    width: 25%;
+}
+
+.card-2 .img2{
+    width: 47%;
+}
+
+.card-2 .img3{
+    width: 44%;
+}
+
+.card-2 p{
+    font-size: 1rem;
+    margin: 0;
+}
+
+.card-2 .preco{
+    color: red;
+    font-size: 1.3rem;
+}
+
+/*=============================
+        SESSÃO FOOTER
+===============================*/
+footer{
+    display: flex;
+    align-items: center;
+    background-color: #4E9443;
+    width: 100%;
+    height: 300px;
+}
+
+.footer-flex{
+    display: flex;
+}
+
+.footer-column{
+    flex-direction: column;
+    flex: 1;
+    width: 200px;
+    height: 200px;
+}
+
+.footer-column h4{
+    text-transform: uppercase;
+    color: white;
+    font-weight: 300;
+}
+
+.footer-column img{
+    width: 70%;
+}
+
+.footer-column p{
+    font-size: 0.9rem;
+    font-weight: 300;
+    line-height: 5px;
+    color: white;
+}
+
+.footer-hr{
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, transparent, #ccc, transparent);  
+}
+
+.copy{
+    font-size: 0.6rem;
+    font-weight: 300;
+    margin: 0;
+    color: white;
+    text-align: center;
+}
+
+/*==============================================
+        ÁREA HEADER REDES SOCIAIS FOOTER
+================================================*/
+
+.redes-sociais-footer{
+    display: none;
+    justify-content: space-between;
+}
+
+.redes-sociais-footer img{
+    width: 20px;
+    transition: all 1s;
+}
+
+.redes-sociais-footer img:hover{
+    -webkit-transform: rotateZ(360deg);
+    transform: rotateZ(360deg);
+}
+
+
+
+/*=============================
+         @MEDIA QUERY
+===============================*/
+
+@media (min-width: 769px) and (max-width: 1024px){
+    .card img{
+        position: absolute;
+        width: 12%;
+    }
+    
+}
+
+@media (max-width: 768px){
+
+    .menu-none{
+        display: flex;
+    }
+
+    .menu{
+        flex-direction: column;
+        justify-content: space-around;
+        text-align: center;
+        background-color: #4E9443;
+        height: 300px;
+        width: 100vw;
+        position: absolute;
+        top: 40px;
+        right: 0;
+    }
+
+    .menu a{
+        color: white;
+    }
+
+    .menu a:hover{
+        color: #ccc;
+    }
+    
+    .contatos-header{
+        width: 85%;
+    }
+
+    .barra-menu{
+        display: inline-block;
+    }
+
+    .usuario img{
+        margin-left: 20px;
+    }
+
+    .opc-menu{
+        display: none;
+    }
+
+    .card-banner p{
+        font-family: 'Cinzel Decorative', cursive;
+    }
+
+    .info-produtos p{
+        font-size: 0.7rem;
+        font-weight: 500;
+    }
+
+    .info-produtos .preco{
+        font-size: 0.9rem;
+    }
+
+    .quadro-branco{
+        width: 86%;
+        height: 60%;
+    }
+
+    .card{
+        padding-left: 5px;
+    }
+
+    .card img{
+        width: 11.9%;
+    }
+
+    .cards-destaques .card{
+        width: 30%;
+        height: 200px;
+    }
+
+    .comprar{
+        margin-top: 15px;
+        padding: 4px 10px;
+        font-size: 0.7rem;
+    }
+
+    .footer-column h4{
+        font-size: 0.9rem;
+    }
+
+    .footer-column P{
+        font-size: 0.8rem;
+    }
+
+    .redes-sociais{
+        display: none;
+    }
+
+    .redes-sociais-footer{
+        display: flex;
+        width: 160px;
+    }
+
+}
+
+@media (max-width: 425px){
+
+    .contatos-header{
+        display: none;
+    }
+
+    .header-contact{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .menu-login .logo {
+        width: 50px;
+    }
+
+    .minha-conta{
+        display: none;
+    }
+
+    .menu-login{
+        width: 100%;
+    }
+
+    form{
+        width: 100%;
+    }
+
+    form input{
+        font-size: 1rem;
+        padding: 8px 12px;
+        margin-left: 15px;
+    }
+
+    .pesquisar{
+        padding: 0;
+    }
+
+    #banner-principal{
+        height: 180px;
+        margin-bottom: 20px;
+    }
+
+    .card-banner p{
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    .card-banner {
+        height: 175px;
+    }
+
+    .cards-destaques p {
+        font-size: 1.2rem;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    .card-flex{
+        flex-direction: column;
+    }
+    
+    .cards-destaques .card {
+        width: 100%;
+        height: 180px;
+    }
+
+    .quadro-branco {
+        width: 50%;
+        height: 80%;
+    }
+
+    .cards-destaques p {
+        font-size: 1rem;
+        margin: 0;
+    }
+
+    .card{
+        margin-bottom: 20px;
+    }
+
+    .card img {
+        width: 35%;
+    }
+
+    .cards-produtos p {
+        font-size: 1.2rem;
+        margin: 0;
+    }
+
+    .card-2 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .produtos{
+        margin-bottom: 50px;
+    }
+
+    footer {
+        height: 250px;
+    }
+
+    .footer-column {
+        height: 150px;
+    }
+
+    .footer-column h4 {
+        font-size: 0.4rem;
+        font-weight: 500;
+    }
+
+    .footer-column P {
+        font-size: 0.5rem;
+        line-height: 13px;
+    }
+
+    .footer-column img {
+        width: 85%;
+    }
+
+    .copy {
+        font-size: 0.4rem;
+        font-weight: 300;
+    }
+
+}
