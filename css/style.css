@@ -6,6 +6,11 @@
 ===========================================*/
 *{
     font-family: 'Montserrat', sans-serif;
+    
+}
+
+hr:not([size]) {
+    height: 2px;
 }
 
 /*=========================================
@@ -16,7 +21,7 @@
     text-transform: uppercase;
     background-color: red;
     border: 0;
-    margin-top: 30px;
+    margin-top: 20px;
     padding: 8px 20px;
     border-radius: 5px;
 }
@@ -29,6 +34,7 @@
 .comprar:hover{
     background-color: tomato;
 }
+
 
 
 /*=============================================
@@ -310,49 +316,42 @@ form img{
     margin-bottom: 20px;
 }
 
-.cards-destaques hr{
-        border: 0;
-        height: 2px;
-        background-image: linear-gradient(to right, transparent, #4E9443, transparent);  
+.linha-hr{
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, transparent, #4E9443, transparent);  
 }
 
 .cards-destaques .card{
     background-image: url(../imagens/bannerGamer.jpg);
     background-position: center;
     background-size: cover;
-    width: 32%;
-    height: 250px;
+    width: 30%;
+    height: 400px;
 }
 
 .quadro-branco{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 50%;
-    height: 85%;
+    height: 50%;
     background-color: white;
 }
 
 .card{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding-left: 10px;
 }
 
-.flex-and{
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-}
 
 .card img{
-    position: absolute;
-    width: 13%;
-}
-
-.flex-column{
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    align-content: center;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 45%;
 }
 
 .card-info{
@@ -403,11 +402,20 @@ form img{
     margin-bottom: 20px;
 }
 
-.cards-produtos hr{
+hr {
+    margin: 1rem 0;
+    background-color: #ccc;
+    border: 0;
+    opacity: .25;
+}
+
+
+.linha-hr {
     border: 0;
     height: 2px;
-    background-image: linear-gradient(to right, transparent, #4E9443, transparent);  
-}
+    background-image: linear-gradient(to right, transparent, #4E944E, transparent);
+    opacity: 1;
+  }
 
 .card-2{
     display: flex;
@@ -520,11 +528,19 @@ footer{
 ===============================*/
 
 @media (min-width: 769px) and (max-width: 1024px){
-    .card img{
-        position: absolute;
-        width: 12%;
+    h4 {
+        font-size: 1.2rem;
     }
-    
+
+    .quadro-branco{
+        width: 70%;
+        height: 50%;
+        background-color: white;
+    }
+
+    .card img{
+        width: 65%;
+    }
 }
 
 @media (max-width: 768px){
@@ -582,17 +598,32 @@ footer{
         font-size: 0.9rem;
     }
 
+    .cards-destaques .card{
+        width: 30%;
+        height: 230px;
+    }
+
     .quadro-branco{
-        width: 86%;
-        height: 60%;
+        width: 56%;
+        height: 80%;
+    }
+
+    .card-banner img {
+        width: 100%;
+    }
+
+    .card-banner p {
+        font-size: 2rem;
+        line-height: 40px;
     }
 
     .card{
-        padding-left: 5px;
+        padding-top: 5px;
+        padding-bottom: 5px;
     }
 
     .card img{
-        width: 11.9%;
+        width: 45.9%;
     }
 
     .cards-destaques .card{
@@ -652,9 +683,13 @@ footer{
         width: 100%;
     }
 
+    form img{
+        width: 18px;
+    }
+
     form input{
         font-size: 1rem;
-        padding: 8px 12px;
+        padding: 7px 10px;
         margin-left: 15px;
     }
 
@@ -668,18 +703,13 @@ footer{
     }
 
     .card-banner p{
-        font-size: 1rem;
+        font-size: 0.8rem;
         font-weight: 700;
+        line-height: 16px;
     }
 
     .card-banner {
         height: 175px;
-    }
-
-    .cards-destaques p {
-        font-size: 1.2rem;
-        margin-top: 30px;
-        margin-bottom: 20px;
     }
 
     .card-flex{
@@ -692,12 +722,12 @@ footer{
     }
 
     .quadro-branco {
-        width: 50%;
+        width: 30%;
         height: 80%;
     }
 
     .cards-destaques p {
-        font-size: 1rem;
+        font-size: 0.7rem;
         margin: 0;
     }
 
@@ -706,16 +736,20 @@ footer{
     }
 
     .card img {
-        width: 35%;
+        width: 25%;
     }
 
     .cards-produtos p {
-        font-size: 1.2rem;
+        font-size: 0.7rem;
         margin: 0;
     }
 
+    .card-flex {
+        align-items: center;
+    }
+
     .card-2 {
-        width: 100%;
+        width: 85%;
         margin-bottom: 20px;
     }
 
@@ -727,18 +761,35 @@ footer{
         height: 250px;
     }
 
+    .footer-flex{
+        flex: 1;
+    }
+
     .footer-column {
         height: 150px;
     }
 
     .footer-column h4 {
-        font-size: 0.4rem;
+        font-size: 0.3rem;
         font-weight: 500;
     }
 
     .footer-column P {
-        font-size: 0.5rem;
-        line-height: 13px;
+        font-size: 0.3rem;
+        line-height: 2px;
+    }
+
+    .redes-sociais-footer {
+        width: 90px;
+    }
+
+    .redes-sociais-footer a img{
+        width: 12px;
+        height: 12px;
+    }
+
+    .footer-column{
+        flex: 1;
     }
 
     .footer-column img {
@@ -746,7 +797,7 @@ footer{
     }
 
     .copy {
-        font-size: 0.4rem;
+        font-size: 0.3rem;
         font-weight: 300;
     }
 
