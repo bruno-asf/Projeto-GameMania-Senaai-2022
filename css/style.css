@@ -734,6 +734,10 @@ footer{
         margin-bottom: 20px;
     }
 
+    .card-jogos{
+        margin-bottom: 20px;
+    }
+
     .card-banner p{
         font-size: 0.8rem;
         font-weight: 700;
@@ -769,6 +773,7 @@ footer{
 
     .card img {
         width: 25%;
+        height: 70px;
     }
 
     .cards-produtos p {
