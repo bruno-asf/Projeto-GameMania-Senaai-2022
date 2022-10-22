@@ -258,12 +258,27 @@ form img{
         SESSÃO BANNER PRINCIPAL
 =====================================*/
 
-#banner-principal{
-    background-image: url(../imagens/bannerGamer.jpg);
+.banner-principal{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100%;
+    height: 500px;
+}
+
+.banner-gamer{
+    background-image: url(../imagens/bannerGamermania.jpg);
+}
+
+.banner-playstation{
+    background-image: url(../imagens/playstation5.jpg);
+}
+
+.banner-xbox{
+    background-image: url(../imagens/xbox.jpg);
+}
+
+.banner-nintendo{
+    background-image: url(../imagens/nintendo.jpg);
 }
 
 .card-jogos{
@@ -541,9 +556,18 @@ footer{
     .card img{
         width: 65%;
     }
+
 }
 
 @media (max-width: 768px){
+
+    .banner-principal,
+    .banner-playstation,
+    .banner-xbox,
+    .banner-nintendo{
+        height: 300px;
+
+    }
 
     .menu-none{
         display: flex;
@@ -657,6 +681,14 @@ footer{
 }
 
 @media (max-width: 425px){
+
+    .banner-principal,
+    .banner-playstation,
+    .banner-xbox,
+    .banner-nintendo{
+        height: 50%;
+
+    }
 
     .contatos-header{
         display: none;
