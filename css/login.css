@@ -110,3 +110,12 @@ hr{
     right: 10px;
     cursor: pointer;
 }
+
+#msgError{
+    text-align: center;
+    color: red;
+    background-color: #ffbbbb;
+    padding: 10px;
+    border-radius: 4px;
+    display: none;
+}

@@ -13,6 +13,11 @@ hr:not([size]) {
     height: 2px;
 }
 
+.vendas{
+    background-color: #f1f1f1;
+    height: 100vh;
+}
+
 /*=========================================
                BOTÃO UNIVERSAL
 ===========================================*/
@@ -337,7 +342,7 @@ form img{
     background-image: linear-gradient(to right, transparent, #4E9443, transparent);  
 }
 
-.cards-destaques .card{
+.cards-destaques .cards-00{
     background-image: url(../imagens/bannerGamer.jpg);
     background-position: center;
     background-size: cover;
@@ -349,24 +354,25 @@ form img{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50%;
+    width: 70%;
     height: 50%;
     background-color: white;
 }
 
-.card{
+.cards-00{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
 
-.card img{
+.cards-00 img{
     display: flex;
     align-items: center;
     justify-content: center;
     position: absolute;
-    width: 45%;
+    width: 13%;
 }
 
 .card-info{
@@ -553,8 +559,8 @@ footer{
         background-color: white;
     }
 
-    .card img{
-        width: 65%;
+    .cards-00 img{
+        width: 15%;
     }
 
 }
@@ -622,7 +628,7 @@ footer{
         font-size: 0.9rem;
     }
 
-    .cards-destaques .card{
+    .cards-destaques .cards-00{
         width: 30%;
         height: 230px;
     }
@@ -641,16 +647,16 @@ footer{
         line-height: 40px;
     }
 
-    .card{
+    .cards-00{
         padding-top: 5px;
         padding-bottom: 5px;
     }
 
-    .card img{
-        width: 45.9%;
+    .cards-00 img{
+        width: 12%;
     }
 
-    .cards-destaques .card{
+    .cards-destaques .cards-00{
         width: 30%;
         height: 200px;
     }
@@ -752,7 +758,7 @@ footer{
         flex-direction: column;
     }
     
-    .cards-destaques .card {
+    .cards-destaques .cards-00 {
         width: 100%;
         height: 180px;
     }
@@ -767,12 +773,12 @@ footer{
         margin: 0;
     }
 
-    .card{
+    .cards-00{
         margin-bottom: 20px;
     }
 
-    .card img {
-        width: 25%;
+    .cards-00 img {
+        width: 20%;
         height: 70px;
     }
 
@@ -839,3 +845,447 @@ footer{
     }
 
 }
+
+
+/*==============================================
+        SECTION COMPRAR/VENDER MOUSE
+================================================*/
+
+.vendasGame{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+.comprarMouse{
+    background-color: white;
+    display: flex;
+    height: 90vh;
+    border-radius: 5px;
+}
+
+.mouseImg{
+    background-image: url(../imagens/Mouse2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    margin: 10px;
+    flex: 3;
+
+    -webkit-transition: -webkit-transform .5s ease;
+    transition: transform .5s ease;
+}
+
+.mouseImg:hover{
+    -webkit-transform: scale(1.1);
+   transform: scale(1.1);
+}
+
+.mouseInfo{
+    flex: 2;
+    margin: 10px;
+}
+
+.pagamentos{
+    display: flex;
+    justify-content: space-between;
+}
+
+.mouseInfo p{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.mouseInfo span{
+    font-size: 1.5rem;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.pix{
+    display: flex;
+    flex: 1;
+}
+
+.cartao{
+    flex: 1;
+}
+
+.pix .desconto{
+    display: flex;
+    color: red;
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+.pix p{
+    font-size: .8rem;
+    font-weight: 400;
+}
+
+.fa-pix{
+    color: #32bcad;
+    font-size: 30px;
+}
+
+.fa-credit-card{
+    font-size: 30px;
+}
+
+.cartao span{
+    font-size: 1.5rem;
+}
+
+.cartao p{
+    font-size: .8rem;
+    font-weight: 400;
+}
+
+.cashback{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #f1f1f1;
+    height: 60px;
+}
+
+.cashback .p1{
+    font-size: .9rem;
+    font-weight: 400;
+    margin: 0 0 0 10px;
+}
+
+.cashback .p2{
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0 0 0 10px;
+}
+
+.btn-carrinho button{
+    width: 100%;
+    outline: 0;
+    border: 0;
+    border-radius: 6px;
+    margin-top: 10px;
+    padding: 15px;
+    background-color: #00a441;
+    color: white;
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+
+.btn-carrinho button:hover{
+    background-color: #00a421;
+}
+
+/*==============================================
+        SECTION PRODUTOS RELACIONADOS
+================================================*/
+
+.produtos-relacionados{
+    background-color: #f1f1f1;
+}
+
+.vendas-relacionadas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: aqua;
+    height: 60vh;
+}
+
+.carrossel-produtos{
+    background-color: white;
+    display: flex;
+    height: 50vh;
+    border-radius: 5px;
+}
+
+
+/*==============================================
+        SECTION COMPRAR/VENDER CONTROLE
+================================================*/
+
+.vendasGame{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+.comprarControle{
+    background-color: white;
+    display: flex;
+    height: 90vh;
+    border-radius: 5px;
+}
+
+.controleImg{
+    background-image: url(../imagens/controle.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    margin: 10px;
+    flex: 3;
+
+    -webkit-transition: -webkit-transform .5s ease;
+    transition: transform .5s ease;
+}
+
+.controleImg:hover{
+    -webkit-transform: scale(1.1);
+   transform: scale(1.1);
+}
+
+.controleInfo{
+    flex: 2;
+    margin: 10px;
+}
+
+.pagamentos{
+    display: flex;
+    justify-content: space-between;
+}
+
+.controleInfo p{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.controleInfo span{
+    font-size: 1.5rem;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.pix{
+    display: flex;
+    flex: 1;
+}
+
+.cartao{
+    flex: 1;
+}
+
+.pix .desconto{
+    display: flex;
+    color: red;
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+.pix p{
+    font-size: .8rem;
+    font-weight: 400;
+}
+
+.fa-pix{
+    color: #32bcad;
+    font-size: 30px;
+}
+
+.fa-credit-card{
+    font-size: 30px;
+}
+
+.cartao span{
+    font-size: 1.5rem;
+}
+
+.cartao p{
+    font-size: .8rem;
+    font-weight: 400;
+}
+
+.cashback{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #f1f1f1;
+    height: 60px;
+}
+
+.cashback .p1{
+    font-size: .9rem;
+    font-weight: 400;
+    margin: 0 0 0 10px;
+}
+
+
+/*==============================================
+        SECTION COMPRAR/VENDER CAIXA SOM
+================================================*/
+
+.vendasGame{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+.comprarCaixasom{
+    background-color: white;
+    display: flex;
+    height: 90vh;
+    border-radius: 5px;
+}
+
+.caixasomImg{
+    background-image: url(../imagens/caixa-som.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    margin: 10px;
+    flex: 3;
+
+    -webkit-transition: -webkit-transform .5s ease;
+    transition: transform .5s ease;
+}
+
+.caixasomImg:hover{
+    -webkit-transform: scale(1.1);
+   transform: scale(1.1);
+}
+
+.caixasomInfo{
+    flex: 2;
+    margin: 10px;
+}
+
+.pagamentos{
+    display: flex;
+    justify-content: space-between;
+}
+
+.caixasomInfo p{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.caixasomInfo span{
+    font-size: 1.5rem;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.pix{
+    display: flex;
+    flex: 1;
+}
+
+.cartao{
+    flex: 1;
+}
+
+.pix .desconto{
+    display: flex;
+    color: red;
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+.pix p{
+    font-size: .8rem;
+    font-weight: 400;
+}
+
+.fa-pix{
+    color: #32bcad;
+    font-size: 30px;
+}
+
+.fa-credit-card{
+    font-size: 30px;
+}
+
+.cartao span{
+    font-size: 1.5rem;
+}
+
+.cartao p{
+    font-size: .8rem;
+    font-weight: 400;
+}
+
+.cashback{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #f1f1f1;
+    height: 60px;
+}
+
+.cashback .p1{
+    font-size: .9rem;
+    font-weight: 400;
+    margin: 0 0 0 10px;
+}
+
+.cashback .p2{
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0 0 0 10px;
+}
+
+.btn-carrinho button{
+    width: 100%;
+    outline: 0;
+    border: 0;
+    border-radius: 6px;
+    margin-top: 10px;
+    padding: 15px;
+    background-color: #00a441;
+    color: white;
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+
+.btn-carrinho button:hover{
+    background-color: #00a421;
+}
+
+
+
+/*==============================================
+           SECTION CARDS-CAROUSEL
+================================================*/
+
+.cards-carousel{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card{
+    margin: 0.5rem;
+}
+
+.card-title{
+    text-align: center;
+}
+
+.card-body a{
+    display: flex;
+    justify-content: center;
+}
+
+.btn{
+    background-color: #00a441;
+    border-color: #00a421;
+}
+
+.btn:hover{
+    background-color: #00a421
+}
+
+
+
+ 
