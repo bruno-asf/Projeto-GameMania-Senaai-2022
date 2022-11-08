@@ -1253,10 +1253,8 @@ footer{
     background-color: #00a421;
 }
 
-
-
 /*==============================================
-           SECTION CARDS-CAROUSEL
+   SECTION PRODUTOS RELACIONADOS CARDS-CAROUSEL
 ================================================*/
 
 .cards-carousel{
@@ -1284,6 +1282,15 @@ footer{
 
 .btn:hover{
     background-color: #00a421
+}
+
+.produtos-relacionados{
+    padding-bottom: 30px;
+}
+
+.produtos-relacionados h3{
+    text-align: center;
+    font-weight: 600;
 }
 
 
