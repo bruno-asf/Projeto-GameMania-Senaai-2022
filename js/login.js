@@ -42,7 +42,7 @@ function entrar(){
     });
 
         if (usuario.value == userValid.user && senha.value == userValid.senha) {
-            window.location.href = 'file:///C:/Users/Bruno%20Makalyster/Desktop/Projeto-GameMania-Seani/index.html'
+            window.location.href = 'file:///C:/Users/Bruno%20Makalyster/Desktop/Projeto-GameMania-Senai/index.html'
 
             let token = Math.random().toString(16).substring(2)
             localStorage.setItem('token', token)

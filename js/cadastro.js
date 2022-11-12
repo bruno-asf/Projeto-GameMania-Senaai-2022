@@ -100,7 +100,7 @@ function cadastrar() {
         msgError.innerHTML = ''
 
         setTimeout(()=>{
-            window.location.href='file:///C:/Users/Bruno%20Makalyster/Desktop/Projeto-GameMania-Seani/login.html'
+            window.location.href='file:///C:/Users/Bruno%20Makalyster/Desktop/Projeto-GameMania-Senai/login.html'
         }, 3000)
 
     } else {

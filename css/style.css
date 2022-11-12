@@ -325,6 +325,7 @@ form img{
 .card-flex{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .cards-destaques p{
@@ -412,7 +413,7 @@ form img{
 
 
 .produtos{
-    margin-bottom: 150px;
+    margin-bottom: 100px;
 }
 .cards-produtos p{
     font-size: 1.5rem;
@@ -445,7 +446,8 @@ hr {
     justify-content: space-around;
     width: 27%;
     height: 350px;
-    border: 1px solid #ccc
+    border: 1px solid #ccc;
+    margin-bottom: 3%;
 }
 
 .card-2 img{
@@ -935,6 +937,7 @@ footer{
     font-size: 30px;
 }
 
+
 .cartao span{
     font-size: 1.5rem;
 }
@@ -1010,12 +1013,6 @@ footer{
         SECTION COMPRAR/VENDER CONTROLE
 ================================================*/
 
-.vendasGame{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100vh;
-}
 .comprarControle{
     background-color: white;
     display: flex;
@@ -1047,11 +1044,6 @@ footer{
     margin: 10px;
 }
 
-.pagamentos{
-    display: flex;
-    justify-content: space-between;
-}
-
 .controleInfo p{
     font-size: 1.5rem;
     font-weight: 600;
@@ -1064,70 +1056,11 @@ footer{
     margin-right: 10px;
 }
 
-.pix{
-    display: flex;
-    flex: 1;
-}
-
-.cartao{
-    flex: 1;
-}
-
-.pix .desconto{
-    display: flex;
-    color: red;
-    font-weight: 400;
-    font-size: 0.9rem;
-}
-
-.pix p{
-    font-size: .8rem;
-    font-weight: 400;
-}
-
-.fa-pix{
-    color: #32bcad;
-    font-size: 30px;
-}
-
-.fa-credit-card{
-    font-size: 30px;
-}
-
-.cartao span{
-    font-size: 1.5rem;
-}
-
-.cartao p{
-    font-size: .8rem;
-    font-weight: 400;
-}
-
-.cashback{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: #f1f1f1;
-    height: 60px;
-}
-
-.cashback .p1{
-    font-size: .9rem;
-    font-weight: 400;
-    margin: 0 0 0 10px;
-}
-
 
 /*==============================================
         SECTION COMPRAR/VENDER CAIXA SOM
 ================================================*/
 
-.vendasGame{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100vh;
-}
 .comprarCaixasom{
     background-color: white;
     display: flex;
@@ -1159,11 +1092,6 @@ footer{
     margin: 10px;
 }
 
-.pagamentos{
-    display: flex;
-    justify-content: space-between;
-}
-
 .caixasomInfo p{
     font-size: 1.5rem;
     font-weight: 600;
@@ -1176,82 +1104,6 @@ footer{
     margin-right: 10px;
 }
 
-.pix{
-    display: flex;
-    flex: 1;
-}
-
-.cartao{
-    flex: 1;
-}
-
-.pix .desconto{
-    display: flex;
-    color: red;
-    font-weight: 400;
-    font-size: 0.9rem;
-}
-
-.pix p{
-    font-size: .8rem;
-    font-weight: 400;
-}
-
-.fa-pix{
-    color: #32bcad;
-    font-size: 30px;
-}
-
-.fa-credit-card{
-    font-size: 30px;
-}
-
-.cartao span{
-    font-size: 1.5rem;
-}
-
-.cartao p{
-    font-size: .8rem;
-    font-weight: 400;
-}
-
-.cashback{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: #f1f1f1;
-    height: 60px;
-}
-
-.cashback .p1{
-    font-size: .9rem;
-    font-weight: 400;
-    margin: 0 0 0 10px;
-}
-
-.cashback .p2{
-    font-size: 1rem;
-    font-weight: 600;
-    margin: 0 0 0 10px;
-}
-
-.btn-carrinho button{
-    width: 100%;
-    outline: 0;
-    border: 0;
-    border-radius: 6px;
-    margin-top: 10px;
-    padding: 15px;
-    background-color: #00a441;
-    color: white;
-    font-size: 1rem;
-    text-transform: uppercase;
-    margin-top: 30px;
-}
-
-.btn-carrinho button:hover{
-    background-color: #00a421;
-}
 
 /*==============================================
    SECTION PRODUTOS RELACIONADOS CARDS-CAROUSEL
@@ -1294,5 +1146,209 @@ footer{
 }
 
 
+/*==============================================
+        SECTION COMPRAR/VENDER MICROFONE
+================================================*/
+
+.comprarMicrofone{
+    background-color: white;
+    display: flex;
+    height: 90vh;
+    border-radius: 5px;
+}
+
+.microfoneImg{
+    background-image: url(../imagens/microfone00.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    margin: 10px;
+    flex: 3;
+
+    -webkit-transition: -webkit-transform .5s ease;
+    transition: transform .5s ease;
+}
+
+.microfoneImg:hover{
+    -webkit-transform: scale(1.1);
+   transform: scale(1.1);
+}
+
+.microfoneInfo{
+    flex: 2;
+    margin: 10px;
+}
+
+.microfoneInfo p{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.microfoneInfo span{
+    font-size: 1.5rem;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+/*==============================================
+        SECTION COMPRAR/VENDER CELULAR
+================================================*/
+
+.comprarCelular{
+    background-color: white;
+    display: flex;
+    height: 90vh;
+    border-radius: 5px;
+}
+
+.celularImg{
+    background-image: url(../imagens/celular00.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    margin: 10px;
+    flex: 3;
+
+    -webkit-transition: -webkit-transform .5s ease;
+    transition: transform .5s ease;
+}
+
+.celularImg:hover{
+    -webkit-transform: scale(1.1);
+   transform: scale(1.1);
+}
+
+.celularInfo{
+    flex: 2;
+    margin: 10px;
+}
+
+.celularInfo p{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.celularInfo span{
+    font-size: 1.5rem;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/*==============================================
+        SECTION COMPRAR/VENDER CPU
+================================================*/
+
+.comprarCPU{
+    background-color: white;
+    display: flex;
+    height: 90vh;
+    border-radius: 5px;
+}
+
+.cpuImg{
+    background-image: url(../imagens/cpu00.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    margin: 10px;
+    flex: 3;
+
+    -webkit-transition: -webkit-transform .5s ease;
+    transition: transform .5s ease;
+}
+
+.cpuImg:hover{
+    -webkit-transform: scale(1.1);
+   transform: scale(1.1);
+}
+
+.cpuInfo{
+    flex: 2;
+    margin: 10px;
+}
+
+.cpuInfo p{
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.cpuInfo span{
+    font-size: 1.4rem;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.pix p{
+    font-size: .8rem;
+    font-weight: 400;
+}
+
+.cartao span{
+    font-size: 1.5rem;
+}
+
+.cartao p{
+    font-size: .8rem;
+    font-weight: 400;
+}
+
+/*==============================================
+             SECTION PLAYSTATION
+================================================*/
+
+.card-playstation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 27%;
+    height: 350px;
+    border: 1px solid #ccc;
+    margin-bottom: 3%;
+}
+
+.card-playstation p{
+    font-size: 1rem;
+    margin: 0;
+}
+
+.card-playstation .preco{
+    color: red;
+    font-size: 1.2rem;
+}
+
+
+.card-playstation img{
+    width: 70%;
+}
+
+.comprar-produto{
+    text-transform: uppercase;
+    background-color: red;
+    border: 0;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    padding: 8px 20px;
+    border-radius: 5px;
+}
+
+.comprar-produto a{
+    text-decoration: none;
+    color: white;
+}
+
+.comprar-produto:hover{
+    background-color: tomato;
+}
 
  
