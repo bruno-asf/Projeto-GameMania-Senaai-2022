@@ -232,6 +232,10 @@ form img{
     width: 30px;
 }
 
+.minha-conta-425{
+    display: none;
+}
+
 /*===================================
         ÁREA HEADER OPÇÕES DO MENU
 =====================================*/
@@ -904,6 +908,28 @@ footer{
 
 
 @media (max-width: 425px){
+
+    .header-minhaConta{
+
+    }
+
+    .minha-conta-425{
+        display: flex;
+        width: 100%;
+    }
+
+    .usuario img {
+        width: 20px;
+        margin: 0 10px;
+    }
+
+    .usuario p{
+        margin: 0;
+    }
+
+    .itens-carrinho img {
+        width: 25px;
+    }
 
     .barra-menu{
         display: inline-block;
