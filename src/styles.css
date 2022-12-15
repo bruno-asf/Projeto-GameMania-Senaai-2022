@@ -1,1 +1,997 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Montserrat:wght@300;500;700&display=swap');
+
+
+/*=========================================
+               FONTE UNIVERSAL
+===========================================*/
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+*{
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+hr:not([size]) {
+    height: 2px;
+}
+
+.vendas{
+    background-color: #f1f1f1;
+    height: 100vh;
+}
+
+/*=========================================
+               BOTÃO UNIVERSAL
+===========================================*/
+
+.comprar{
+    text-transform: uppercase;
+    background-color: red;
+    border: 0;
+    margin-top: 20px;
+    padding: 8px 20px;
+    border-radius: 5px;
+}
+
+.comprar a{
+    text-decoration: none;
+    color: white;
+}
+
+.comprar:hover{
+    background-color: tomato;
+}
+
+.card-flex{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.produtos{
+    margin-bottom: 100px;
+}
+
+.cards-produtos p{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+hr {
+    margin: 1rem 0;
+    background-color: #ccc;
+    border: 0;
+    opacity: .25;
+}
+
+
+.linha-hr {
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, transparent, #4E944E, transparent);
+    opacity: 1;
+  }
+  
+
+  /*==============================================
+             SECTION CARDS PRODUTOS
+================================================*/
+
+.card-playstation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 27%;
+    height: 350px;
+    border: 1px solid #ccc;
+    margin-bottom: 3%;
+}
+
+.card-playstation p{
+    font-size: 1rem;
+    line-height: 1rem;
+    margin: 0;
+}
+
+.card-playstation .preco{
+    color: red;
+    font-size: 1.2rem;
+}
+
+
+.card-playstation img{
+    width: 70%;
+}
+
+.comprar-produto{
+    text-transform: uppercase;
+    background-color: red;
+    border: 0;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    padding: 8px 20px;
+    border-radius: 5px;
+}
+
+.comprar-produto a{
+    text-decoration: none;
+    color: white;
+}
+
+.comprar-produto:hover{
+    background-color: tomato;
+}
+
+
+/*=============================
+         @MEDIA QUERY
+===============================*/
+
+@media (min-width: 769px) and (max-width: 1024px){
+    h4 {
+        font-size: 1.2rem;
+    }
+
+    .quadro-branco{
+        width: 70%;
+        height: 50%;
+        background-color: white;
+        margin-bottom: 10px;
+    }
+
+    .cards-00 img{
+        width: 15%;
+    }
+
+    .info-produtos p {
+        max-width: 200px;
+        font-size: 1rem;
+    }
+
+    div .mouseInfo span {
+        font-size: 1rem;
+    }
+
+        /* venda mouse */
+
+    div .mouseImg{
+        background-size: 100%;
+        background-color: white;
+    }
+
+    /* venda controle */
+
+    div .controleImg{
+
+    }
+
+    div .controleInfo span {
+        font-size: 1rem;
+    }
+
+    /* venda caixa de som */
+
+    div .caixasomImg{
+        background-color: white;
+    }
+
+     /* venda Microfone */
+
+     div .microfoneImg{
+        flex: 2;
+     }
+
+      /* venda Celular */
+
+     div .celularImg{
+        background-color: white;
+        background-size: 130%;
+        flex: 2;
+     }
+
+      /* venda CPU */
+
+      div .cpuImg{
+        background-color: white;
+        background-size: 150%;
+        flex: 2;
+     }
+
+    /* cards carousel */
+
+       .card-title{
+        font-size: 1rem;
+       }
+
+}
+
+@media (min-width: 426px) and (max-width: 768px){
+
+    .banner-principal,
+    .banner-playstation,
+    .banner-xbox,
+    .banner-nintendo{
+        height: 300px;
+
+    }
+
+    .menu-none{
+        display: flex;
+    }
+
+    .menu{
+        flex-direction: column;
+        justify-content: space-around;
+        text-align: center;
+        background-color: #4E9443;
+        height: 300px;
+        width: 100vw;
+        position: absolute;
+        top: 40px;
+        right: 0;
+    }
+
+    .menu a{
+        color: white;
+    }
+
+    .menu a:hover{
+        color: #ccc;
+    }
+    
+    .contatos-header{
+        width: 85%;
+    }
+
+    .barra-menu{
+        display: inline-block;
+    }
+
+    .usuario img{
+        margin-left: 20px;
+    }
+
+    .opc-menu{
+        display: none;
+    }
+
+    .card-banner p{
+        font-family: 'Cinzel Decorative', cursive;
+    }
+
+    .info-produtos p{
+        font-size: 0.7rem;
+        font-weight: 500;
+    }
+
+    .info-produtos .preco{
+        font-size: 0.9rem;
+    }
+
+    .cards-destaques .cards-00{
+        width: 30%;
+        height: 230px;
+    }
+
+    .quadro-branco{
+        width: 56%;
+        height: 80%;
+    }
+
+    .card-banner img {
+        width: 100%;
+    }
+
+    .card-banner p {
+        font-size: 2rem;
+        line-height: 40px;
+    }
+
+    .cards-00{
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    .cards-00 img{
+        width: 12%;
+    }
+
+    .cards-destaques .cards-00{
+        width: 30%;
+        height: 200px;
+    }
+
+    .card-2{
+        width: 32%;
+    }
+
+    .comprar{
+        margin-top: 15px;
+        padding: 4px 10px;
+        font-size: 0.7rem;
+    }
+
+    .footer-column h4{
+        font-size: 0.9rem;
+    }
+
+    .footer-column P{
+        font-size: 0.8rem;
+    }
+
+    .redes-sociais{
+        display: none;
+    }
+
+    .redes-sociais-footer{
+        display: flex;
+        width: 160px;
+    }
+
+
+
+    /*area playstation*/
+
+    .card-playstation{
+        min-width: 45%;
+    }
+
+    /*area mouse tablet*/
+
+    .comprarMouse{
+        flex-direction: column;
+        margin-top: 30px;
+        flex: 3;
+    }
+
+    div .mouseImg{
+        background-size: 100%;
+    }
+
+    div .mouseInfo p {
+        font-size: 0.9rem;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .produtos-relacionados h3 {
+        padding-top: 30px;
+    }
+
+    /*area controle tablet*/
+
+    .comprarControle{
+        flex-direction: column;
+        margin-top: 30px;
+        flex: 3;
+    }
+
+    div .controleImg{
+        background-size: 100%;
+    }
+
+    div .controleInfo p {
+        font-size: 0.9rem;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .produtos-relacionados h3 {
+        padding-top: 30px;
+    }
+
+
+    /*area caixa som tablet*/
+
+    .comprarCaixasom{
+        flex-direction: column;
+        margin-top: 30px;
+        flex: 3;
+    }
+
+    div .caixasomImg{
+        background-size: 130%;
+    }
+
+    div .caixasomInfo p {
+        font-size: 0.9rem;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+     /*area microfone tablet*/
+
+     .comprarMicrofone{
+        flex-direction: column;
+        margin-top: 30px;
+
+    }
+
+    div .microfoneImg{
+        background-size: 100%;
+    }
+
+    div .microfoneInfo p {
+        font-size: 0.9rem;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    /*area celular tablet*/
+
+    .comprarCelular{
+        flex-direction: column;
+        margin-top: 30px;
+        flex: 3;
+    }
+
+    div .celularImg{
+        background-size: 100%;
+    }
+
+    div .celularInfo p {
+        font-size: 0.9rem;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .produtos-relacionados h3 {
+        padding-top: 30px;
+    }
+
+
+    /*area CPU tablet*/
+
+    .comprarCPU{
+        flex-direction: column;
+        margin-top: 30px;
+        flex: 3;
+    }
+
+    div .cpuImg{
+        background-size: 120%;
+        background-color: white;
+    }
+
+    div .cpuInfo p {
+        font-size: 0.9rem;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .produtos-relacionados h3 {
+        padding-top: 30px;
+    }
+
+
+
+    /*cards 2 por 2*/
+
+    .card{
+        min-width: 22px;
+    }
+
+    .cards-carousel{
+        flex-wrap: wrap;
+    }
+
+}
+
+
+@media (max-width: 425px){
+
+    .header-minhaConta{
+
+    }
+
+    .minha-conta-425{
+        display: flex;
+        width: 100%;
+    }
+
+    .usuario img {
+        width: 20px;
+        margin: 0 10px;
+    }
+
+    .usuario p{
+        margin: 0;
+    }
+
+    .itens-carrinho img {
+        width: 25px;
+    }
+
+    .barra-menu{
+        display: inline-block;
+    }
+
+    .menu-none{
+        display: flex;
+    }
+
+    .menu{
+        flex-direction: column;
+        justify-content: space-around;
+        text-align: center;
+        background-color: #4E9443;
+        height: 300px;
+        width: 100vw;
+        position: absolute;
+        top: 40px;
+        right: 0;
+    }
+
+    .menu a{
+        color: white;
+    }
+
+    .menu a:hover{
+        color: #ccc;
+    }
+    
+    .contatos-header{
+        width: 85%;
+    }
+
+    .opc-menu{
+        display: none;
+    }
+
+    .redes-sociais{
+        display: none;
+    }
+
+    .banner-principal,
+    .banner-playstation,
+    .banner-xbox,
+    .banner-nintendo{
+        height: 50%;
+
+    }
+
+    .contatos-header{
+        display: none;
+    }
+
+    .header-contact{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .menu-login .logo {
+        width: 50px;
+    }
+
+    .minha-conta{
+        display: none;
+    }
+
+    .menu-login{
+        width: 100%;
+    }
+
+    form{
+        width: 100%;
+    }
+
+    form img{
+        width: 18px;
+    }
+
+    form input{
+        font-size: 1rem;
+        padding: 7px 10px;
+        margin-left: 15px;
+    }
+
+    .pesquisar{
+        padding: 0;
+    }
+
+    #banner-principal{
+        height: 180px;
+        margin-bottom: 20px;
+    }
+
+    .card-jogos{
+        margin-bottom: 20px;
+    }
+
+    .card-banner p{
+        font-size: 0.8rem;
+        font-weight: 700;
+        line-height: 16px;
+    }
+
+    .card-banner {
+        height: 175px;
+    }
+
+    .card-flex{
+        flex-direction: column;
+    }
+    
+    .cards-destaques .cards-00 {
+        width: 100%;
+        height: 250px;
+    }
+
+    .quadro-branco {
+        width: 50%;
+        height: 80%;
+        margin-top: 10px;
+    }
+
+    .cards-destaques p {
+        font-size: 0.8rem;
+        margin: 0;
+    }
+
+    .cards-00{
+        margin-bottom: 20px;
+    }
+
+    .comprar{
+        text-transform: uppercase;
+        background-color: red;
+        border: 0;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 4px 8px;
+        border-radius: 5px;
+
+    }
+
+    .comprar a{
+        font-size: 12px;
+    }
+
+    .info-produtos .preco {
+        color: red;
+        font-size: 1rem;
+    }
+
+    .cards-00 img {
+        width: 30%;
+        height: 100px;
+    }
+
+    .cards-produtos p {
+        font-size: 0.8rem;
+        margin-top: 0px;
+        margin-bottom: 15px;
+    }
+
+    .card-flex {
+        align-items: center;
+    }
+
+    .card-2 {
+        width: 70%;
+        margin-bottom: 20px;
+    }
+
+    .produtos{
+        margin-bottom: 50px;
+    }
+
+    footer {
+        height: 250px;
+    }
+
+    .footer-flex{
+        flex: 1;
+    }
+
+    .footer-column {
+        height: 150px;
+    }
+
+    .footer-column h4 {
+        font-size: 0.5rem;
+        font-weight: 500;
+    }
+
+    .footer-column P {
+        font-size: 0.3rem;
+        line-height: 2px;
+    }
+
+    .redes-sociais-footer {
+        width: 90px;
+    }
+
+    .redes-sociais-footer a img{
+        width: 12px;
+        height: 12px;
+    }
+
+    .footer-column{
+        flex: 1;
+    }
+
+    .footer-column img {
+        width: 85%;
+    }
+
+    .copy {
+        font-size: 0.3rem;
+        font-weight: 300;
+    }
+
+    .card-playstation{
+        min-width: 90%;
+    }
+
+    /* MEDIA CARROSSEL */
+    .card{
+        min-width: 22px;
+    }
+
+    .cards-carousel{
+        flex-wrap: wrap;
+    }
+
+
+    /*mouse-flex-colunm*/
+
+    .comprarMouse{
+        flex-direction: column;
+        margin-top: 30px;
+        flex: 1;
+    }
+
+    div .mouseImg{
+        flex: 1;
+        background-size: 100%;
+    }
+
+    div .mouseInfo{
+        flex: 1;
+    }
+
+    .vendas,
+    .comprarMouse,
+    .comprarControle,
+    .comprarMicrofone,
+    .vendasGame{
+        max-height: 70vh;
+    }
+
+    div .mouseInfo p {
+        font-size: 0.7rem;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .pix .fa-pix{
+        font-size: 18px;
+    }
+
+    .cartao .fa-credit-card{
+        font-size: 18px;
+    }
+
+    div .cashback .p2 {
+        font-size: 0.8rem;
+    }
+
+    .produtos-relacionados h3 {
+        padding-top: 30px;
+        font-size: 1rem;
+    }
+
+    div .mouseInfo span {
+        font-size: 0.7rem;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    div .btn-carrinho button {
+        font-size: 0.7rem;
+    }
+
+
+    /*controle-flex-colunm*/
+
+    .comprarControle{
+        flex-direction: column;
+        margin-top: 30px;
+        flex: 1;
+    }
+
+    div .controleImg{
+        flex: 1;
+        background-size: 100%;
+    }
+
+    div .controleInfo{
+        flex: 1;
+    }
+
+    div .controleInfo p {
+        font-size: 0.7rem;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .pix .fa-pix{
+        font-size: 18px;
+    }
+
+    .cartao .fa-credit-card{
+        font-size: 18px;
+    }
+
+    div .cashback .p2 {
+        font-size: 0.8rem;
+    }
+
+    .produtos-relacionados h3 {
+        padding-top: 30px;
+        font-size: 1rem;
+    }
+
+    div .controleInfo span {
+        font-size: 0.7rem;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    div .btn-carrinho button {
+        font-size: 0.7rem;
+    }
+
+
+    /*caixaSom-flex-colunm*/
+
+    .comprarCaixasom{
+        flex-direction: column;
+        margin-top: 30px;
+        flex: 3;
+    }
+
+    div .caixasomImg{
+        flex: 1;
+        background-size: 130%;
+    }
+
+    div .caixasomInfo{
+        flex: 1;
+    }
+
+    div .caixasomInfo p {
+        font-size: 0.7rem;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    div .caixasomInfo span {
+        font-size: 0.7rem;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+
+    /*area microfone tablet*/
+
+    .comprarMicrofone{
+        flex-direction: column;
+        margin-top: 30px;
+    }
+
+    div .microfoneImg{
+        background-color: white;
+        background-size: 100%;
+    }
+
+    div .microfoneInfo{
+    }
+
+    div .microfoneInfo p {
+        font-size: 0.7rem;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .pix .fa-pix{
+        font-size: 18px;
+    }
+
+    .cartao .fa-credit-card{
+        font-size: 18px;
+    }
+
+    div .cashback .p2 {
+        font-size: 0.8rem;
+    }
+
+    .produtos-relacionados h3 {
+        padding-top: 30px;
+        font-size: 1rem;
+    }
+
+    div .microfoneInfo span {
+        font-size: 0.7rem;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    div .btn-carrinho button {
+        font-size: 0.7rem;
+    }
+
+    /*celular-flex-colunm*/
+
+    .comprarCelular{
+        flex-direction: column;
+        margin-top: 30px;
+        flex: 1;
+    }
+
+    div .celularImg{
+        flex: 1;
+        background-size: 70%;
+        background-color: white;
+    }
+
+    div .celularInfo{
+        flex: 1;
+    }
+
+    div .celularInfo p {
+        font-size: 0.7rem;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    div .celularInfo span {
+        font-size: 0.7rem;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+
+    /*CPU-flex-colunm*/
+
+    .comprarCPU{
+        flex-direction: column;
+        margin-top: 30px;
+        flex: 1;
+    }
+
+    div .cpuImg{
+        flex: 1;
+        background-size: 120%;
+        background-color: white;
+    }
+
+    div .cpuInfo{
+        flex: 1;
+    }
+
+    div .cpuInfo p {
+        font-size: 0.7rem;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    div .cpuInfo span {
+        font-size: 0.7rem;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+}
+

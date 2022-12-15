@@ -1,0 +1,215 @@
+/*=============================================
+             ÁREA HEADER CONTATOS
+==============================================*/
+
+.area-contatos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    background-color: #181717;
+    position: relative;
+}
+
+.header-contact{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contatos-header{
+    display: flex;
+    justify-content: space-between;
+    width: 65%;
+}
+
+.contacts{
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+
+.contacts img{
+    width: 24px;
+}
+
+.contacts a{
+    text-decoration: none;
+}
+
+.contacts p{
+    margin: 0;
+    color: white;
+    padding-left: 10px;
+    font-size: 0.9rem;
+}
+
+.contacts p:hover{
+    color: #ccc;
+}
+
+/*==================================
+        ÁREA HEADER REDES SOCIAIS
+====================================*/
+
+.redes-sociais{
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+}
+
+.redes-sociais a{
+    display: flex;
+
+}
+
+.redes-sociais img{
+    width: 24px;
+    transition: all 1s;
+}
+
+.redes-sociais img:hover{
+    -webkit-transform: rotateZ(360deg);
+    transform: rotateZ(360deg);
+}
+
+.menu-barra{
+    display: flex
+}
+
+.barra-menu{
+    display: none;
+}
+
+.menu-none{
+    display: none;
+}
+
+
+/*=================================
+    ÁREA HEADER LOGIN - SEARCH
+===================================*/
+
+.login-search{
+    display: flex;
+    align-items: center;
+    height: 150px;
+    margin-bottom: 20px;
+    background-color: #4E9443;
+}
+
+.header-login{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.menu-login{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 65%;
+    height: 100%;
+}
+
+.menu-login .logo{
+    width: 90px;
+}
+
+form{
+    display: flex;
+    width: 70%;
+}
+
+form input{
+    font-size: 1.2rem;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 0;
+    outline: 0px;
+    width: 100%;
+}
+
+form button{
+    background-color: transparent;
+    border: 0;
+}
+
+form img{
+    display: flex;
+    width: 20px;
+    margin-left: -32px;
+}
+/*==================================
+        ÁREA LOGIN - USUÁRIO
+====================================*/
+
+.minha-conta{
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    align-items: center;
+}
+
+.usuario{
+    display: flex;
+    align-items: center;
+}
+
+.usuario a{
+    text-decoration: none;
+}
+
+.usuario p:hover{
+    color: #ccc;
+}
+
+.usuario p{
+    color: white;
+}
+
+.usuario img{
+    width: 30px;
+    margin-right: 10px;
+    margin-left: 50px;
+}
+
+.usuario .sinal{
+    width: 15px;
+    margin-left: 8px;
+}
+
+.itens-carrinho img{
+    width: 30px;
+}
+
+.minha-conta-425{
+    display: none;
+}
+
+/*===================================
+        ÁREA HEADER OPÇÕES DO MENU
+=====================================*/
+
+.opc-menu{
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+.menu a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 600;
+    color: black;
+}
+
+.menu a:hover{
+    color: #4E9443;
+}
