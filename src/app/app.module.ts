@@ -12,6 +12,10 @@ import { NintendoComponent } from './views/nintendo/nintendo.component';
 import { XboxComponent } from './views/xbox/xbox.component';
 import { AcessoriosComponent } from './views/acessorios/acessorios.component';
 import { InformaticaComponent } from './views/informatica/informatica.component';
+import { MouseComponent } from './views/mouse/mouse.component';
+import { ControleComponent } from './views/controle/controle.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { CaixasomComponent } from './views/caixasom/caixasom.component';
 
 @NgModule({
   declarations: [
@@ -23,12 +27,16 @@ import { InformaticaComponent } from './views/informatica/informatica.component'
     NintendoComponent,
     XboxComponent,
     AcessoriosComponent,
-    InformaticaComponent
+    InformaticaComponent,
+    MouseComponent,
+    ControleComponent,
+    CaixasomComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

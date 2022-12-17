@@ -133,6 +133,134 @@ hr {
 }
 
 
+/*==============================================
+   SECTION PRODUTOS RELACIONADOS CARDS-CAROUSEL
+================================================*/
+
+.cards-carousel{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card{
+    margin: 0.5rem;
+}
+
+.card-title{
+    text-align: center;
+}
+
+.card-body a{
+    display: flex;
+    justify-content: center;
+}
+
+.btn{
+    background-color: #00a441;
+    border-color: #00a421;
+}
+
+.btn:hover{
+    background-color: #00a421
+}
+
+.produtos-relacionados{
+    padding-bottom: 30px;
+}
+
+.produtos-relacionados h3{
+    text-align: center;
+    font-weight: 600;
+}
+
+
+
+/*==============================================
+        SECTION PIX FORMA DE PAGAMENTO
+================================================*/
+
+.pix{
+    display: flex;
+    flex: 1;
+}
+
+.cartao{
+    flex: 1;
+}
+
+.pix .desconto{
+    display: flex;
+    color: red;
+    font-weight: 400;
+    font-size: 0.8rem;
+}
+
+.pix p{
+    font-size: .8rem;
+    font-weight: 400;
+}
+
+.pix h4{
+    font-size: 20px;
+}
+
+.pix span{
+    color: #32bcad;
+}
+
+.pix p{
+    color: #32bcad;
+}
+
+
+.cartao span{
+    font-size: 1.5rem;
+}
+
+.cartao p{
+    font-size: .8rem;
+    font-weight: 400;
+}
+
+.cashback{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #f1f1f1;
+    height: 60px;
+}
+
+.cashback .p1{
+    font-size: .9rem;
+    font-weight: 400;
+    margin: 0 0 0 10px;
+}
+
+.cashback .p2{
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0 0 0 10px;
+}
+
+.btn-carrinho button{
+    width: 100%;
+    outline: 0;
+    border: 0;
+    border-radius: 6px;
+    margin-top: 10px;
+    padding: 15px;
+    background-color: #00a441;
+    color: white;
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+
+.btn-carrinho button:hover{
+    background-color: #00a421;
+}
+
+
 /*=============================
          @MEDIA QUERY
 ===============================*/
