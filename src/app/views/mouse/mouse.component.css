@@ -1,0 +1,178 @@
+/*==============================================
+        SECTION COMPRAR/VENDER MOUSE
+================================================*/
+
+.vendasGame{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+.comprarMouse{
+    background-color: white;
+    display: flex;
+    height: 90vh;
+    border-radius: 5px;
+}
+
+.mouseImg{
+    background-image: url(assets/imagens/Mouse2.jpg);
+    background-size: 100%;
+    background-position: center;
+    background-color: white;
+    background-repeat: no-repeat;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    margin: 10px;
+    flex: 3;
+    
+
+    -webkit-transition: -webkit-transform .5s ease;
+    transition: transform .5s ease;
+}
+
+.mouseImg:hover{
+    -webkit-transform: scale(1.1);
+   transform: scale(1.1);
+}
+
+.mouseInfo{
+    flex: 2;
+    margin: 10px;
+}
+
+.pagamentos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mouseInfo p{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.mouseInfo span{
+    font-size: 1.5rem;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.mouseInfo .pix img{
+    width: 30px;
+    height: 30px;
+}
+
+.mouseInfo .cartao img{
+    width: 30px;
+}
+
+
+.pix{
+    display: flex;
+    flex: 1;
+}
+
+.cartao{
+    flex: 1;
+
+}
+
+.cartao img{
+
+}
+
+.pix .desconto{
+    display: flex;
+    color: red;
+    font-weight: 400;
+    font-size: 0.8rem;
+}
+
+.pix p{
+    font-size: .8rem;
+    font-weight: 400;
+}
+
+.fa-pix{
+    color: #32bcad;
+    font-size: 30px;
+}
+
+.fa-credit-card{
+    font-size: 30px;
+}
+
+
+.cartao span{
+    font-size: 1.5rem;
+}
+
+.cartao p{
+    font-size: .8rem;
+    font-weight: 400;
+}
+
+.cashback{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #f1f1f1;
+    height: 60px;
+}
+
+.cashback .p1{
+    font-size: .9rem;
+    font-weight: 400;
+    margin: 0 0 0 10px;
+}
+
+.cashback .p2{
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0 0 0 10px;
+}
+
+.btn-carrinho button{
+    width: 100%;
+    outline: 0;
+    border: 0;
+    border-radius: 6px;
+    margin-top: 10px;
+    padding: 15px;
+    background-color: #00a441;
+    color: white;
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+
+.btn-carrinho button:hover{
+    background-color: #00a421;
+}
+
+
+
+/*==============================================
+        SECTION PRODUTOS RELACIONADOS
+================================================*/
+
+.produtos-relacionados{
+    background-color: #f1f1f1;
+}
+
+.vendas-relacionadas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: aqua;
+    height: 60vh;
+}
+
+.carrossel-produtos{
+    background-color: white;
+    display: flex;
+    height: 50vh;
+    border-radius: 5px;
+}
