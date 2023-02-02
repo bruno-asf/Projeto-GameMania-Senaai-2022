@@ -1,0 +1,23 @@
+package testesenaicurso;
+
+import org.junit.Before;
+import org.junit.Test;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class TesteBuscaCursos {
+	private WebDriver driver;
+	
+	@Before
+	public void abrirNavegador() {
+		System.setProperty("webdriver.chrome.driver", "/home/b_makalyster/Downloads/chromedriver_linux64/chromedriver");
+		driver = new ChromeDriver();
+		driver.manage().window().maximize();
+	}
+	
+	@Test
+	public void testeNavegador() {
+		driver.get("https://google.com");
+	}
+
+}
